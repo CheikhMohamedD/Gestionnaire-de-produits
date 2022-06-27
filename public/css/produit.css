@@ -1,0 +1,352 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 70%;
+}
+.mynavbar{
+    background-color: #16b1b5;
+}
+.titre{
+    margin: 33px auto 33px auto;
+}
+.footer {
+    margin-top: 70px;
+    bottom: 0;
+    width: 100%;
+
+}
+.myrow{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: inline;
+}
+.myfooter{
+    background-color: #1c737e;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    padding: 21px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+a.nav-link{
+    margin-left: 30px
+}
+.mybody{
+    background-color: #EBEBEB;
+
+}
+
+
+span {
+    display: inline-block;
+}
+
+
+
+
+
+/*DETAILS MODAL*/
+#modal-btn{
+    float: right;
+}
+:root {
+    --modal-duration: 1s;
+    --modal-color: #16b1b5;
+}
+
+.button {
+    background: #428bca;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3876ac;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 40%;
+    background: transparent;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*AJOUT BUTTON*/
+
+.sign {
+    margin-top:200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+        ellipse 50% 35% at 50% 50%,
+        #000000,
+        transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    text-transform: uppercase;
+    font-size: 6em;
+    font-family: apple-system;
+    color: #80FBE5;
+    text-shadow: 0 0 0.6rem #80FBE5, 0 0 1.5rem #58AE9F,
+    -0.2rem 0.1rem 1rem #58AE9F, 0.2rem 0.1rem 1rem #58AE9F,
+    0 -0.5rem 2rem #316159, 0 0.5rem 3rem #316159;
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #80FBE5;
+        text-shadow: 0 0 0.6rem #80FBE5, 0 0 1.5rem #58AE9F,
+        -0.2rem 0.1rem 1rem #58AE9F, 0.2rem 0.1rem 1rem #58AE9F,
+        0 -0.5rem 2rem #316159, 0 0.5rem 3rem #316159;
+    }
+    28%,
+    33% {
+        color: #58AE9F;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #316159;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        color: #172D2A;
+        text-shadow: none;
+    }
+    100% {
+        color: #80FBE5;
+        text-shadow: 0 0 0.6rem #80FBE5, 0 0 1.5rem #58AE9F,
+        -0.2rem 0.1rem 1rem #58AE9F, 0.2rem 0.1rem 1rem #58AE9F,
+        0 -0.5rem 2rem #316159, 0 0.5rem 3rem #316159;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
